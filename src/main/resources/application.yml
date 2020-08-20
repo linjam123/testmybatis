@@ -1,0 +1,10 @@
+spring:
+  #HikariDataSource连接池配置，而不是jdbcdatasouce
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot_test
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
+  type-aliases-package: com.how2j.testmybatis.entity
